@@ -19,7 +19,7 @@ public class TimeShow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_show);
       String[] s = {"hey","hi","hello","goodevening","goodmorning","goodafternon","goodnight","goodLuck","goodTime","see you Later","Bye Bye","what the heck","What the fuck?!","Lets hope it is enough now :)"};
-        ListAdapter ss = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,s);
+        ListAdapter ss = new Customview(this,s);
         ListView lista = (ListView) findViewById(R.id.TheListView);
         lista.setAdapter(ss);
         lista.setOnItemClickListener(
@@ -31,17 +31,7 @@ public class TimeShow extends AppCompatActivity {
                         String s = String.valueOf(parent.getItemAtPosition(position));
                         Toast.makeText(TimeShow.this,s,Toast.LENGTH_LONG).show();
                     }
-                }
-
-
-
-
-
-
-
-
-
-        );
+                });
     }
 
 
