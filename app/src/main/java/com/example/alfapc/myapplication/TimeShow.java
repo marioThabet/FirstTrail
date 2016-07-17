@@ -18,6 +18,7 @@ public class TimeShow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_show);
+        int x = 0 ;
       String[] s = {"hey","hi","hello","goodevening","goodmorning","goodafternon","goodnight","goodLuck","goodTime","see you Later","Bye Bye","what the heck","What the fuck?!","Lets hope it is enough now :)"};
         ListAdapter ss = new Customview(this,s);
         ListView lista = (ListView) findViewById(R.id.TheListView);
